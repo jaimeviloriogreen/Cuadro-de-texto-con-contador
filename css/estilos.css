@@ -1,0 +1,122 @@
+:root{
+    --color1: #ffffff;
+    --color2: #000000;
+    --color3: #F0F3F5;
+    --color4: #750d1c;
+
+    --fuente1: "Raleway", sans-serif;
+    --fuente2: "Quicksand", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 62.5rem;
+    margin: 6.25rem auto;
+}
+
+#formulario{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.cajaTexto{
+    max-height: 9.375rem;
+    min-height: 9.375rem;
+    font-size: 1rem;
+    font-family: var(--fuente1);
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border: none;
+    border: 1px solid rgba(87, 86, 86, 0.671);
+    border-radius: 2px;
+}
+
+.activo {
+    width: 6rem;
+    align-self: flex-end;
+    border: none;
+    background-color: #db3049;
+    color: var(--color3);
+    font-size: 1.25rem;
+    font-family: var(--fuente2);
+    font-weight: 400;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    /* cursor: not-allowed;  */
+    transition: background-color 500ms ease-in;  
+}
+
+.activo:hover{
+    background-color: #9e0b21;
+    transition: background-color 500ms ease-in-out;
+}
+
+.inactivo{
+    width: 6rem;
+    align-self: flex-end;
+    border: none;
+    background-color: #666363;
+    color: var(--color3);
+    font-size: 1.25rem;
+    font-family: var(--fuente2);
+    font-weight: 400;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    cursor: not-allowed;
+}
+
+.cajaBlanca{
+    border: 1px solid rgba(51, 48, 48, 0.705);
+    width: 3rem;
+    padding: .5rem;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.advertencia{
+    width: 3rem;
+    padding: .5rem;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #27db0f;
+    color: #ffffff;
+}
+
+.limite{
+    width: 3rem;
+    padding: .5rem;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #f0ec00;
+    color: #555050;
+}
+
+.exceder{
+    width: 3rem;
+    padding: .5rem;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: #a3062d;
+    color: #ffffff;
+}
+
+.contador > p{
+    font-size: 1.25rem;
+    font-family: var(--fuente2);
+    font-weight: 900;
+}
+
+
